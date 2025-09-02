@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h3>Three Images</h3>
+    <div class="container">
+        <div id="image-1">
+            <img id="img1" src="images/image1.png" alt="">
+        </div>
+        <div id="image-2">
+            <img id="img2" src="images/image2.png" alt="">
+        </div>
+        <div id="image-3">
+            <img id="img3" src="images/image3.png" alt="">
+        </div>
+    </div>
+    <div class="imge-print">
+        
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <script>
+        
+        const image1=document.getElementById('image-1');
+        image1.addEventListener('click',function(){
+            const img=document.getElementById('img1');
+            img.style.width='600px';
+        });
+
+
+        const image2=document.getElementById('image-2').addEventListener('click',function(){
+            const img=document.getElementById('img2');
+            img.style.width='600px';
+        })
+
+
+        const image3=document.getElementById('image-3').addEventListener('click',function(){
+            const img=document.getElementById('img3');
+            img.style.width='600px';
+        })
+
+    </script>
+    <script>
+        const image10=document.getElementById('image-1');
+        image1.addEventListener('mouseover',function(){
+            const img=document.getElementById('img1');
+            img.style.border='2px solid blue';
+        });
+         const image20=document.getElementById('image-2');
+        image1.addEventListener('mouseover',function(){
+            const img=document.getElementById('img2');
+            img.style.border='2px solid blue';
+        });
+         const image30=document.getElementById('image-3');
+        image1.addEventListener('mouseover',function(){
+            const img=document.getElementById('img3');
+            img.style.border='2px solid blue';
+        });
+    </script>
+    <script>
+        // image1.addEventListener('mouseout',funtion(){
+        //     const image=document.getElementById('img1');
+        //     img.style.border=none;
+        // })
+    </script>
+</body>
+</html>
